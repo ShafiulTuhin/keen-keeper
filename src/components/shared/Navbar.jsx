@@ -10,7 +10,9 @@ const Navbar = () => {
   const pathName = usePathname();
 
   const activeTab = (path) => {
-    return pathName === path ? "text-white  bg-[#244D3F]" : "";
+    return pathName === path
+      ? "text-white bg-[#244D3F] rounded-lg px-3 py-2"
+      : "px-3 py-2";
   };
   return (
     <div className="navbar bg-base-100 shadow-sm">
