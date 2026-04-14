@@ -24,13 +24,28 @@ const FriendsProvider = ({ children }) => {
   // Get calls
   const [calls, setCalls] = useState([]);
   console.log("Calls", calls);
+  // Get text
+  const [texts, setTexts] = useState([]);
+  console.log("Texts", texts);
+  // Get Video
+  const [videos, setVideos] = useState([]);
+  console.log("Videos", videos);
 
   const handleCall = (newFriend) => {
     const isExist = calls.find((call) => call.id == newFriend.id);
+    const isBusy =
+      texts.find((t) => t.id == newFriend.id) ||
+      videos.find((v) => v.id == newFriend.id);
+
+    if (isBusy) {
+      toast.error(`${newFriend.name} is busy right now`);
+      return;
+    }
+
     if (!isExist) {
       if (!loading) {
         setCalls([...calls, newFriend]);
-        toast.success(`Calling to ${newFriend.name}`, {
+        toast.success(`Call with ${newFriend.name}`, {
           position: "top-left",
           autoClose: 2000,
         });
@@ -41,16 +56,22 @@ const FriendsProvider = ({ children }) => {
       toast.error(`${newFriend.name} already in call`);
     }
   };
-  // Get text
-  const [texts, setTexts] = useState([]);
-  console.log("Texts", texts);
 
   const handleText = (newFriend) => {
     const isExist = texts.find((text) => text.id == newFriend.id);
+    const isBusy =
+      calls.find((c) => c.id == newFriend.id) ||
+      videos.find((v) => v.id == newFriend.id);
+
+    if (isBusy) {
+      toast.error(`${newFriend.name} is busy right now`);
+      return;
+    }
+
     if (!isExist) {
       if (!loading) {
         setTexts([...texts, newFriend]);
-        toast.success(`Chatting request to ${newFriend.name}`, {
+        toast.success(`Text with ${newFriend.name}`, {
           position: "top-left",
           autoClose: 2000,
         });
@@ -61,16 +82,22 @@ const FriendsProvider = ({ children }) => {
       toast.error(`${newFriend.name} already in chat`);
     }
   };
-  // Get Video
-  const [videos, setVideos] = useState([]);
-  console.log("Videos", videos);
 
   const handleVideo = (newFriend) => {
     const isExist = videos.find((video) => video.id == newFriend.id);
+    const isBusy =
+      texts.find((t) => t.id == newFriend.id) ||
+      calls.find((c) => c.id == newFriend.id);
+
+    if (isBusy) {
+      toast.error(`${newFriend.name} is busy right now`);
+      return;
+    }
+
     if (!isExist) {
       if (!loading) {
         setVideos([...videos, newFriend]);
-        toast.success(`Video calling to ${newFriend.name}`, {
+        toast.success(`Video with ${newFriend.name}`, {
           position: "top-left",
           autoClose: 2000,
         });

@@ -17,7 +17,7 @@ const Dashboard = () => {
   return (
     <div className="border border-slate-300">
       <h2 className="text-center mb-10 font-semibold text-[#00f93] text-2xl">
-        Communication Stats
+        Friendship Analytics
       </h2>
       <PieChart
         style={{
