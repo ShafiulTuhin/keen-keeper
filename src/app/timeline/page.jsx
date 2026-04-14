@@ -1,6 +1,6 @@
 "use client";
 import { FriendSContext } from "@/context/FriendsProvider";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { DotLoader } from "react-spinners";
 import CallImg from "@/assets/call.png";
 import TextImg from "@/assets/text.png";
@@ -35,9 +35,49 @@ const page = () => {
       </div>
     );
   }
+  // Implementing filtering:
+  const [filter, setFilter] = useState("All");
+  const filteredCalls = filter === "All" || filter === "Call" ? calls : [];
+  const filteredTexts = filter === "All" || filter === "Text" ? texts : [];
+  const filteredVideos = filter === "All" || filter === "Video" ? videos : [];
   return (
     <div className=" space-y-4">
-      {calls.map((call) => (
+      <h2 className="font-bold text-[#1F2937] lg:text-5xl text-3xl">
+        Timeline
+      </h2>
+      {/* Filter part */}
+      <div className="dropdown">
+        <div
+          tabIndex={0}
+          role="button"
+          className="btn m-1 w-52 flex justify-between items-center"
+        >
+          <span className="font-bold text-[#64748B]">
+            {filter === "All" ? "Filter timeline" : filter}
+          </span>
+
+          <span>▼</span>
+        </div>
+
+        <ul
+          tabIndex={0}
+          className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+        >
+          <li>
+            <a onClick={() => setFilter("All")}>All</a>
+          </li>
+          <li>
+            <a onClick={() => setFilter("Call")}>Call</a>
+          </li>
+          <li>
+            <a onClick={() => setFilter("Text")}>Text</a>
+          </li>
+          <li>
+            <a onClick={() => setFilter("Video")}>Video</a>
+          </li>
+        </ul>
+      </div>
+      {filteredCalls.map((call) => (
         <div key={call.id} className="flex gap-3 items-center bg-slate-200 p-3">
           <Image src={CallImg} alt="Calling_img" width={50} height={50} />
           <div>
@@ -49,7 +89,7 @@ const page = () => {
           </div>
         </div>
       ))}
-      {texts.map((text) => (
+      {filteredTexts.map((text) => (
         <div key={text.id} className="flex gap-3 items-center bg-slate-200 p-3">
           <Image src={TextImg} alt="Calling_img" width={50} height={50} />
           <div>
@@ -61,7 +101,7 @@ const page = () => {
           </div>
         </div>
       ))}
-      {videos.map((video) => (
+      {filteredVideos.map((video) => (
         <div
           key={video.id}
           className="flex gap-3 items-center bg-slate-200 p-3"
