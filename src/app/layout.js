@@ -4,6 +4,7 @@ import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import FriendsProvider from "@/context/FriendsProvider";
 import { ToastContainer } from "react-toastify";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Keen-Keeper",
-  description: "A web application to connects with friends",
+  description: "A web application for communication between friends",
 };
 
 export default function RootLayout({ children }) {
@@ -27,6 +28,9 @@ export default function RootLayout({ children }) {
       data-theme="light"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <Head>
+        <link rel="icon" href="/logo.png" />
+      </Head>
       <body className="min-h-screen flex flex-col">
         <Navbar />
 

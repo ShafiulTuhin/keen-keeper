@@ -10,7 +10,9 @@
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
     "next_due_date": "2025-07-20",
-    "preferred_contact": "call"
+    "preferred_contact": "call",
+    "need_attention": true,
+    "interaction_this_month": "yes"
   },
   {
     "id": 2,
@@ -23,7 +25,9 @@
     "bio": "Work colleague turned good friend.",
     "goal": 10,
     "next_due_date": "2025-07-15",
-    "preferred_contact": "email"
+    "preferred_contact": "email",
+    "need_attention": true,
+    "interaction_this_month": "yes"
   },
   {
     "id": 3,
@@ -36,7 +40,9 @@
     "bio": "Gym partner and motivation buddy.",
     "goal": 30,
     "next_due_date": "2025-07-25",
-    "preferred_contact": "chat"
+    "preferred_contact": "chat",
+    "need_attention": true,
+    "interaction_this_month": "no"
   },
   {
     "id": 4,
@@ -49,7 +55,9 @@
     "bio": "School best friend since childhood.",
     "goal": 7,
     "next_due_date": "2025-07-10",
-    "preferred_contact": "meeting"
+    "preferred_contact": "meeting",
+    "need_attention": false,
+    "interaction_this_month": "yes"
   },
   {
     "id": 5,
@@ -62,7 +70,9 @@
     "bio": "Former office teammate.",
     "goal": 20,
     "next_due_date": "2025-07-28",
-    "preferred_contact": "email"
+    "preferred_contact": "email",
+    "need_attention": true,
+    "interaction_this_month": "no"
   },
   {
     "id": 6,
@@ -75,7 +85,9 @@
     "bio": "Study group friend from university.",
     "goal": 14,
     "next_due_date": "2025-07-18",
-    "preferred_contact": "chat"
+    "preferred_contact": "chat",
+    "need_attention": false,
+    "interaction_this_month": "yes"
   },
   {
     "id": 7,
@@ -88,7 +100,9 @@
     "bio": "Met in online gaming community.",
     "goal": 30,
     "next_due_date": "2025-07-30",
-    "preferred_contact": "chat"
+    "preferred_contact": "chat",
+    "need_attention": true,
+    "interaction_this_month": "no"
   },
   {
     "id": 8,
@@ -101,7 +115,9 @@
     "bio": "Close cousin, like a sister.",
     "goal": 7,
     "next_due_date": "2025-07-12",
-    "preferred_contact": "call"
+    "preferred_contact": "call",
+    "need_attention": false,
+    "interaction_this_month": "yes"
   },
   {
     "id": 9,
@@ -114,7 +130,9 @@
     "bio": "College roommate and travel buddy.",
     "goal": 15,
     "next_due_date": "2025-07-22",
-    "preferred_contact": "meeting"
+    "preferred_contact": "meeting",
+    "need_attention": true,
+    "interaction_this_month": "yes"
   },
   {
     "id": 10,
@@ -127,7 +145,9 @@
     "bio": "School friend and study partner.",
     "goal": 10,
     "next_due_date": "2025-07-16",
-    "preferred_contact": "chat"
+    "preferred_contact": "chat",
+    "need_attention": false,
+    "interaction_this_month": "yes"
   },
   {
     "id": 11,
@@ -140,7 +160,9 @@
     "bio": "Senior at work, very supportive.",
     "goal": 30,
     "next_due_date": "2025-07-31",
-    "preferred_contact": "email"
+    "preferred_contact": "email",
+    "need_attention": true,
+    "interaction_this_month": "no"
   },
   {
     "id": 12,
@@ -153,6 +175,8 @@
     "bio": "Best friend since childhood days.",
     "goal": 7,
     "next_due_date": "2025-07-08",
-    "preferred_contact": "meeting"
+    "preferred_contact": "meeting",
+    "need_attention": false,
+    "interaction_this_month": "yes"
   }
 ]
