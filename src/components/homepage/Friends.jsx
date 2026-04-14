@@ -16,7 +16,7 @@ const Friends = () => {
           <DotLoader color="#244D3F" />
         </div>
       ) : (
-        <div className="grid lg:grid-cols-4 grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
           {friends.map((friend) => (
             <Link
               href={`/friends/${friend.id}`}

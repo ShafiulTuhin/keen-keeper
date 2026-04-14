@@ -8,7 +8,7 @@
 
 ## Technology Used
 
---> Next JS, TAILWIND CSS, daisyUI.
+--> Next JS, TAILWIND CSS, daisyUI, Recharts
 
 ## 3 key features of project
 
