@@ -23,7 +23,7 @@ const FriendsProvider = ({ children }) => {
   }, []);
   // Get calls
   const [calls, setCalls] = useState([]);
-  console.log(calls);
+  console.log("Calls", calls);
 
   const handleCall = (newFriend) => {
     const isExist = calls.find((call) => call.id == newFriend.id);
@@ -43,7 +43,7 @@ const FriendsProvider = ({ children }) => {
   };
   // Get text
   const [texts, setTexts] = useState([]);
-  console.log(calls);
+  console.log("Texts", texts);
 
   const handleText = (newFriend) => {
     const isExist = texts.find((text) => text.id == newFriend.id);
@@ -63,7 +63,7 @@ const FriendsProvider = ({ children }) => {
   };
   // Get Video
   const [videos, setVideos] = useState([]);
-  console.log(calls);
+  console.log("Videos", videos);
 
   const handleVideo = (newFriend) => {
     const isExist = videos.find((video) => video.id == newFriend.id);
