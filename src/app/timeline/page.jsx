@@ -7,7 +7,7 @@ import TextImg from "@/assets/text.png";
 import VideoImg from "@/assets/video.png";
 import Image from "next/image";
 
-const page = () => {
+const Timeline = () => {
   const { calls, texts, videos, loading } = useContext(FriendSContext);
   const date = new Date().toLocaleDateString("en-US", {
     year: "numeric",
@@ -120,4 +120,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Timeline;
