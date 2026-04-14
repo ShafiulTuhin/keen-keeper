@@ -1,29 +1,13 @@
 "use client";
+import { FriendSContext } from "@/context/FriendsProvider";
 import Image from "next/image";
 import Link from "next/link";
-import React, { use, useEffect, useState } from "react";
-import { LuGitPullRequest } from "react-icons/lu";
+import { useContext } from "react";
 import { DotLoader } from "react-spinners";
 
-const friendPromise = fetch("/data.json").then((res) => res.json());
-
 const Friends = () => {
-  const [friends, setFriends] = useState([]);
+  const { friends, loading } = useContext(FriendSContext);
   console.log(friends);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const fetchApps = async () => {
-      const res = await fetch("/data.json");
-      const friendsData = await res.json();
-
-      setTimeout(() => {
-        setFriends(friendsData);
-        setLoading(false);
-      }, 1000);
-    };
-    fetchApps();
-  }, []);
-
   return (
     <div className="container mx-auto py-20 px-4">
       <h2 className="font-bold text-3xl text-[#1F2937] mb-8">Your Friends</h2>
@@ -34,8 +18,8 @@ const Friends = () => {
       ) : (
         <div className="grid lg:grid-cols-4 grid-cols-2 gap-8">
           {friends.map((friend) => (
-            <div
-              //   href={`{/${friend.id}`}
+            <Link
+              href={`/friends/${friend.id}`}
               key={friend.id}
               className="shadow-lg py-10 flex items-center justify-center flex-col rounded-lg space-y-4"
             >
@@ -69,7 +53,7 @@ const Friends = () => {
               >
                 {friend.status}
               </h2>
-            </div>
+            </Link>
           ))}
         </div>
       )}

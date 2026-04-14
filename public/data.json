@@ -9,7 +9,8 @@
     "tags": ["college", "close friend"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
-    "next_due_date": "2025-07-20"
+    "next_due_date": "2025-07-20",
+    "preferred_contact": "call"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "tags": ["work", "friend"],
     "bio": "Work colleague turned good friend.",
     "goal": 10,
-    "next_due_date": "2025-07-15"
+    "next_due_date": "2025-07-15",
+    "preferred_contact": "email"
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "tags": ["gym", "buddy"],
     "bio": "Gym partner and motivation buddy.",
     "goal": 30,
-    "next_due_date": "2025-07-25"
+    "next_due_date": "2025-07-25",
+    "preferred_contact": "chat"
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "tags": ["school", "best friend"],
     "bio": "School best friend since childhood.",
     "goal": 7,
-    "next_due_date": "2025-07-10"
+    "next_due_date": "2025-07-10",
+    "preferred_contact": "meeting"
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "tags": ["colleague"],
     "bio": "Former office teammate.",
     "goal": 20,
-    "next_due_date": "2025-07-28"
+    "next_due_date": "2025-07-28",
+    "preferred_contact": "email"
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "tags": ["university", "friend"],
     "bio": "Study group friend from university.",
     "goal": 14,
-    "next_due_date": "2025-07-18"
+    "next_due_date": "2025-07-18",
+    "preferred_contact": "chat"
   },
   {
     "id": 7,
@@ -81,7 +87,8 @@
     "tags": ["gaming", "online friend"],
     "bio": "Met in online gaming community.",
     "goal": 30,
-    "next_due_date": "2025-07-30"
+    "next_due_date": "2025-07-30",
+    "preferred_contact": "chat"
   },
   {
     "id": 8,
@@ -93,7 +100,8 @@
     "tags": ["cousin", "family"],
     "bio": "Close cousin, like a sister.",
     "goal": 7,
-    "next_due_date": "2025-07-12"
+    "next_due_date": "2025-07-12",
+    "preferred_contact": "call"
   },
   {
     "id": 9,
@@ -105,7 +113,8 @@
     "tags": ["college", "roommate"],
     "bio": "College roommate and travel buddy.",
     "goal": 15,
-    "next_due_date": "2025-07-22"
+    "next_due_date": "2025-07-22",
+    "preferred_contact": "meeting"
   },
   {
     "id": 10,
@@ -117,7 +126,8 @@
     "tags": ["friend", "school"],
     "bio": "School friend and study partner.",
     "goal": 10,
-    "next_due_date": "2025-07-16"
+    "next_due_date": "2025-07-16",
+    "preferred_contact": "chat"
   },
   {
     "id": 11,
@@ -129,7 +139,8 @@
     "tags": ["work", "mentor"],
     "bio": "Senior at work, very supportive.",
     "goal": 30,
-    "next_due_date": "2025-07-31"
+    "next_due_date": "2025-07-31",
+    "preferred_contact": "email"
   },
   {
     "id": 12,
@@ -141,6 +152,7 @@
     "tags": ["best friend", "childhood"],
     "bio": "Best friend since childhood days.",
     "goal": 7,
-    "next_due_date": "2025-07-08"
+    "next_due_date": "2025-07-08",
+    "preferred_contact": "meeting"
   }
 ]
