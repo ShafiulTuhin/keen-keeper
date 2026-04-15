@@ -1,7 +1,17 @@
+import Friends from "@/components/homepage/Friends";
 import React from "react";
 
-const page = () => {
-  return <div></div>;
+export const metadata = {
+  title: "All Friends",
+  description: "Connect with your all friends fro here",
 };
 
-export default page;
+const FriendsPage = () => {
+  return (
+    <div>
+      <Friends></Friends>
+    </div>
+  );
+};
+
+export default FriendsPage;

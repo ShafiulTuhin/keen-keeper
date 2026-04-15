@@ -32,7 +32,7 @@ const FriendDetailsBottom = () => {
 
         <div className="card  w-full">
           <div className="card-body">
-            <div className="flex justify-between items-center shadow-sm pb-3">
+            <div className="flex justify-between items-center shadow-sm px-3 px-3  pb-3">
               <div className="flex gap-3 items-center ">
                 <Image src={CallImg} alt="Call_Img" width={50} height={50} />
                 <div>
@@ -49,7 +49,7 @@ const FriendDetailsBottom = () => {
 
         <div className="card  w-full">
           <div className="card-body">
-            <div className="flex justify-between items-center shadow-sm pb-3">
+            <div className="flex justify-between items-center shadow-sm px-3  pb-3">
               <div className="flex gap-3 items-center ">
                 <Image src={TextImg} alt="Call_Img" width={50} height={50} />
                 <div>
@@ -66,7 +66,7 @@ const FriendDetailsBottom = () => {
 
         <div className="card  w-full">
           <div className="card-body">
-            <div className="flex justify-between items-center shadow-sm pb-3">
+            <div className="flex justify-between items-center shadow-sm px-3  pb-3">
               <div className="flex gap-3 items-center ">
                 <Image src={VideoImg} alt="Call_Img" width={50} height={50} />
                 <div>

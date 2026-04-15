@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Keen-Keeper",
+  title: "Keen-Keeper || Home",
   description: "A web application for communication between friends",
 };
 

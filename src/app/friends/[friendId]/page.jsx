@@ -1,22 +1,14 @@
-"use client";
-import FriendDetailsBottom from "@/components/friends-details/FriendDetailsBottom";
-import FriendDetailsMiddle from "@/components/friends-details/FriendDetailsMiddle";
-import FriendDetailsTop from "@/components/friends-details/FriendDetailsTop";
-import { FriendSContext } from "@/context/FriendsProvider";
-import { useParams } from "next/navigation";
-import React, { useContext } from "react";
+import FriendComponent from "@/components/friends-details/FriendComponent";
 
-const FriendsDetails = ({ params }) => {
-  params = useParams();
-  const { friendId } = params;
-  const { friends } = useContext(FriendSContext);
-  const friend = friends.find((friend) => friend.id === parseInt(friendId));
+export const metadata = {
+  title: "Friend Details",
+  description: "All information about friend",
+};
 
+const FriendsDetails = () => {
   return (
     <div className="container mx-auto py-20 ">
-      <FriendDetailsTop friend={friend} />
-      <FriendDetailsMiddle friend={friend} />
-      <FriendDetailsBottom />
+      <FriendComponent />
     </div>
   );
 };
